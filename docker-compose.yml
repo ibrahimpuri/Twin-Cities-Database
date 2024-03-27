@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: lamp-web
+    volumes:
+      - ./html:/var/www/html
+    ports:
+      - "80:80"
+    depends_on:
+      - database
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: database
+    networks:
+      - phpmyadmin_net
+
+  database:
+    image: mariadb
+    container_name: lamp-db
+    environment:
+      MYSQL_ROOT_PASSWORD: zebra
+    volumes:
+      - ./twin_db:/var/lib/mysql
+    networks:
+      - phpmyadmin_net
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: database
+    ports:
+      - "8080:80"
+    depends_on:
+      - database
+    networks:
+      - phpmyadmin_net
+
+networks:
+  phpmyadmin_net:

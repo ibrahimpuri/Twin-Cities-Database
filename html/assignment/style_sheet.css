@@ -1,0 +1,212 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ecf5fa;
+        color: #333;
+        text-align: center;
+        margin: 0px;
+        height: 100%;
+        background-image: linear-gradient(#000, #000);
+        background-size: 2px 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    
+
+      .photo-line {
+        position: absolute;
+        top: 140vh;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        z-index: -1;
+      }
+
+
+
+    .header-box {
+        border-bottom: 2px solid black;
+        padding: 10px;
+        height: 30%;
+        width: 100%;
+        background-color: #ffffff;
+        top: 0;
+        z-index: 1;
+    }
+
+    .today-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    .today {
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .map {
+        width: 31vw;
+        height: 31vw;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        float: left;
+    }
+
+    .map-forecast1 {
+        display: flex;
+        margin-top: 5px;
+        position: relative;
+    }
+    .map-forecast2 {
+        display: flex;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    .forecast {
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 30%;
+        margin-bottom: 20px;
+        margin-left: 3px;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .explore-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 83%;
+        left: 24%;
+    }
+    .explore-button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px; cursor: pointer;
+    }
+    .explore-button:hover {
+        background-color: #0056b3;
+    }
+
+
+
+    .h2-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+    .h2 {
+        width: 45%;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 21px;
+        color: rgb(243, 0, 0);
+        margin-top: 10px;
+    }
+
+
+    
+
+
+
+    .info-bubble {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        font-size: 14px;
+    }
+
+    .info-bubble h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .info-bubble strong {
+        font-weight: bold;
+    }
+
+    .info-bubble p {
+        margin: 5px 0;
+    }
+
+
+
+    .forecast-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 5px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+
+
+    .day-label {
+        background-color: #e7e7e7;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+
+
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    a:hover {
+        background-color: #555;
+    }
